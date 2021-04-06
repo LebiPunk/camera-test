@@ -3,7 +3,7 @@ const webcamElement = document.getElementById('webcam');
 const canvasElement = document.getElementById('canvas');
 const webcam = new Webcam(webcamElement, 'user', canvasElement);
 
-//
+//Funktion Camera Start
 function webcam.start()
   .then(result =>{
     console.log("webcam started");
