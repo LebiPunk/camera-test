@@ -4,8 +4,7 @@ import Webcam from 'webcam-easy';
 //Create Webcam-Object 
 const webcamElement = document.getElementById('webcam');
 const canvasElement = document.getElementById('canvas');
-const snapSoundElement = document.getElementById('snapSound');
-const webcam = new Webcam(webcamElement, 'user', canvasElement, snapSoundElement);
+const webcam = new Webcam(webcamElement, 'user', canvasElement);
 
 //
 function webcam.start()
@@ -15,3 +14,6 @@ function webcam.start()
   .catch(err => {
     console.log(err);
 });
+
+// Start the video stream when the window loads
+window.addEventListener("load", webcam.start, false);
