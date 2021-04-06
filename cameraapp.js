@@ -1,4 +1,4 @@
-//Create Webcam-Object 
+//Create Webcam Object 
 const webcamElement = document.getElementById('webcam');
 const canvasElement = document.getElementById('canvas');
 const webcam = new Webcam(webcamElement, 'user', canvasElement);
