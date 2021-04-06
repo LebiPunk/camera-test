@@ -15,5 +15,5 @@ function webcam.start()
     console.log(err);
 });
 
-// Start the video stream when the window loads
+//Start the video stream when the window loads
 window.addEventListener("load", webcam.start, false);
